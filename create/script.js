@@ -44,3 +44,7 @@ groupMembers.forEach(member => {
   // ajoute la section à l'article
   article.appendChild(section);
 });
+
+for (let i = article.children.length; i >= 0; i--) {
+  article.appendChild(article.children[Math.random() * i | 0]);
+}
